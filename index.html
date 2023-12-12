@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            align-items: left;
+            width: 80%;
+            border: 3px rgb(200, 197, 197) solid;
+            font-size: 20px;
+            flex-direction: column;
+            text-align:left;
+            flex-wrap: wrap;
+        }
+        img{
+            width: 500px;
+        }
+        .A{
+            width: 500px;
+            height: 30px;
+            border-radius: 10px;
+            font-weight: 800;
+        }
+        table{
+            border: 1px, solid, black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>POCZTA W NODE.JS</h1>
+        <ol>
+            <li class="A"><h2>Typ/Specyfikacja Aplikacji Node.js:</h2></li>
+            <p>Node.js to środowisko wykonawcze oparte na silniku V8 od Google, zapewniające możliwość uruchamiania kodu JavaScript po stronie serwera. Poniżej znajdziesz ogólną specyfikację aplikacji Node.js w kontekście obsługi baz danych i wysyłania wiadomości e-mail:</p>
+            <ul><h3>Obsługa Baz Danych</h3>
+                <li>Node.js współpracuje z różnymi rodzajami baz danych, takimi jak MongoDB, MySQL, PostgreSQL, itp.</li>
+                <li>Popularne biblioteki/oprogramowanie do obsługi baz danych w Node.js to np. Mongoose dla MongoDB, Sequelize dla MySQL, itp.</li>
+                <li>KWymagania zależą od konkretnego systemu zarządzania bazą danych (DBMS), ale ogólnie potrzebujesz bibliotek sterowników dla danej bazy danych, a także odpowiednich połączeń i autoryzacji.</li></li>
+            </ul>
+            <ul><h3>Wysyłanie Wiadomości E-mail:</h3>
+            <li>Do wysyłania wiadomości e-mail w Node.js często używane są biblioteki takie jak nodemailer.</li>
+            <li>Wymagania obejmują skonfigurowany serwer pocztowy (SMTP) i odpowiednie poświadczenia (np. adres e-mail i hasło) do wysyłania wiadomości.</li>
+        </ul><br>
+            <li class="A">Metody dla Systemu Pocztowego w Node.js:</li>
+            <p>W Node.js do obsługi systemu pocztowego używane są różne biblioteki, ale jedną z najpopularniejszych jest nodemailer. Nodemailer umożliwia wysyłanie e-maili przez protokół SMTP.</p> 
+            <br>
+            <h1>Podstrona Pomocy - Pytania i Odpowiedzi</h1>
+            <li class="A">Jak Połączyć się z Bazą Danych w Node.js?</li>
+            <ul><h3>Aby połączyć się z bazą danych w Node.js, użyj odpowiedniego sterownika, na przykład Mongoose dla MongoDB. Poniżej znajdziesz przykład kodu:</h3></ul>
+            <img src="1.png" alt="Polaczenie">
+            <li class="A">Jak Wysyłać Wiadomości E-mail w Node.js za pomocą Nodemailer?</li>
+            <ul><h3>Do wysyłania wiadomości e-mail w Node.js używamy biblioteki nodemailer. Poniżej znajdziesz prosty przykład konfiguracji i wysyłania wiadomości:</h3></ul>
+            <img src="2.png" alt="Wiadomosci">
+            <li class="A">Porównanie Metod Obsługi Baz Danych i Wiadomości E-mail w Node.js:</li>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        Metoda
+                    </td>
+                    <td>
+                        Zalety
+                    </td>
+                    <td>
+                        Wady
+                    </td>
+                </tr>
+                <tr>
+                  <td><b>Połączenie z Bazą Danych</b></td>
+                  <td>- Elastyczność w wyborze bazy danych.<br>- Obsługa różnych sterowników.<br>- Skalowalność.<br></td>  
+                  <td>- Konieczność konfiguracji i zarządzania połączeniem.<br>- Bezpieczeństwo wymaga uwagi.</td>
+                </tr>
+                <tr>
+                    <td><b>Nodemailer w Node.js</b></td>
+                    <td>- Prostota użycia.<br>- Wsparcie dla wielu usług pocztowych.<br>- Zaawansowane funkcje wysyłania wiadomości.</td>
+                    <td>- Wymaga dostępu do serwera pocztowego.<br>- Potrzebna konfiguracja SMTP.</td>
+                </tr>
+                <tr>
+                   <td><b>Inne Metody (integracja z usługami e-mailowymi)</b></td> 
+                   <td>- Łatwa integracja z usługami zewnętrznymi.<br>- Gotowe API dla wysyłania e-maili.</td>
+                   <td>- Ograniczenia funkcjonalności w porównaniu do dedykowanych bibliotek.<br>- Zależność od dostawcy usługi.</td>
+                </tr>
+            </table>
+        </ol>
+    </div>
+   
+</body>
+</html>
